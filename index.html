@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="base">
+      <h1>Weather App</h1>
+      <div id="data_entry">
+        <input
+          type="text"
+          id="location"
+          placeholder="   Enter location.. "
+          spellcheck="false"
+        />
+        <button id="search">
+          <img src="imgs/icons8-search-50.png" alt="" />
+        </button>
+      </div>
+      <div id="weather_data">
+        <img id="weather_img" src="imgs/sun.png" alt="" />
+        <p id="temp">Temp: <span id="temp_val">22</span>°C</p>
+        <p id="city">
+          <span id="city_loc">Karachi</span
+          ><img src="imgs/icons8-location-96.png" alt="" />
+        </p>
+        <div id="other_data">
+          <div class="sec1">
+            <h4>Humidity</h4>
+            <span id="humidity_val">31</span>%
+          </div>
+          <hr />
+          <div class="sec2">
+            <h4>Feels like</h4>
+            <span id="feels_val">40</span>°C
+          </div>
+          <hr />
+          <div class="sec3">
+            <h4>Wind Speed</h4>
+            <span id="wind_speed_val">4.12</span>Km/h
+          </div>
+          <hr />
+          <div class="sec4">
+            <h4>Max Temp</h4>
+            <span id="Max_Temp">22</span>°C
+          </div>
+          <hr />
+          <div class="sec5">
+            <h4>Min Temp</h4>
+            <span id="Min_Temp">12</span>°C
+          </div>
+        </div>
+        <div id="error">Please enter a valid Location</div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
